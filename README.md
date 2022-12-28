@@ -16,6 +16,7 @@
      dotnet ef
 8, Enter scaffold command 
       dotnet ef dbcontext scaffold "connectionstring" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models
+(dotnet ef dbcontext scaffold "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=AzureBoard;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models)
 9, For Generating bd context only in the folder
      dotnet ef dbcontext scaffold --context-dir Models
 10, Create the controller also complete the steps in the middleware
